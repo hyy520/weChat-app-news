@@ -1,0 +1,14 @@
+<import src="../../../common/head.wxml" />
+<import src="../../../common/foot.wxml" />
+
+<view class="container">
+  <template is="head" data="{{title: 'map',desc:'map 组件是由客户端创建的原生组件，它的层级是最高的'}}"/>
+
+  <view class="page-body">
+    <view class="page-section page-section-gap">
+      <map id="map" longitude="120.114460" latitude="30.286410"  scale="15" markers="{{markers}}" controls="{{controls}}" polyline="{{polyline}}" circles="{{circles}}" bindcontroltap="controltap" bindmarkertap="markertap" bindregionchange="regionchange" bindtap="tap"  style="width: 100%; height: 400px;"></map>
+    </view>
+  </view>
+
+  <template is="foot" />
+</view>

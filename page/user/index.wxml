@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}     </text>
+  </view>
+  <!-- map.wxml -->
+  <map id="map" longitude="120.114460" latitude="30.286410"  scale="15" markers="{{markers}}" controls="{{controls}}" polyline="{{polyline}}" circles="{{circles}}" bindcontroltap="controltap" bindmarkertap="markertap" bindregionchange="regionchange" bindtap="tap"  style="width: 100%; height: 400px;"></map>
+</view>
